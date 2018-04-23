@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../my test websites/design.css">
+	<script type="text/javascript"> 
+		function test() {
+			var title = document.querySelector("#introduction-text");
+			title.style.color = 'green';
+			title.style.backgroundColor = 'yellow';
+		}
+	</script>
+	<title>Web Design Components</title>
+</head>
+
+<body>
+	<button onclick="test();">Click me to change intro text</button>
+	<div id="jump-list">
+		<ul>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#lists"> Lists</a></li>
+			<li><a href="#forms">Forms</a></li>
+		</ul>
+</div>
+
+<div class="full-width-image">
+	<img src="../my test websites/introduction.jpg" alt="introduction header image">
+</div>
+	<div id="introduction-text">
+
+		<h1>Website Components</h1>
+<p><span class="firstWord">This</span> website contains all the basic elements used to create a webpage.</p>
+</div> <br>
+<div id="tables" class="new-section">
+	<div class='section-header'>
+		<h1>Tables</h1>
+		</div>
+		<div class="section-body">
+			<table>
+			<tr>
+				<th>id</th>
+				<th>First Name</th>				
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>First</td>
+				<td>Second</td>
+				<td>third</td>
+			</tr>
+			<tr>
+				<td>Place</td>
+				<td>Holder</td>
+				<td>Text</td>
+			</tr>
+			</table>
+		</div>	
+</div>
+<div id="lists" class="new-section">
+	<div class='section-header'>
+		<h1>Lists</h1>
+	</div>
+	<div class="section-body">
+		<ul><h2> Unordered List Example</h2>
+		<li>Unordered List Item 1</li>
+		<li>Unordered List Item 1</li>
+		<li>Unordered List Item 1</li>
+	</ul>
+	<ol><h2>Ordered List Example</h2>
+		<li>Ordered List Item 1</li>
+		<li>Ordered List Item 1</li>
+		<li>Ordered List Item 1</li>
+	</ol>
+	<dl><h2>Definition List Example</h2>
+		<dt>Define Term 1</dt>
+		<dd>Define def 1</dd>
+		<dt>Define term 2</dt>
+		<dd>Define def 2</dd>
+		<dt>Define term 3</dt>
+		<dd>Define def 3</dd>
+	</dl>
+	</div>
+</div>
+<div id="forms" class="new-section">
+	<div class='section-header'>
+		<h1>Forms</h1>
+	</div>
+	<div class="section-body">
+		<form action="mailto:contact@website.com?subject=New%20User%20Request" method="post">
+			<label for="firstname">First Name</label><input type="text" id="firstname" name="firstname"><br>
+			<label for="firstname">Surname</label><input type="text" name="surname"><br>
+			<label for="firstname">Email address</label><input type="email" name="email"><br>
+			<input type="submit" value="Submit">			
+		</form>
+	</div>
+</div>
+</body>
+</html>
