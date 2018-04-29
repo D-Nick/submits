@@ -3,25 +3,25 @@
 var testArray = [1999, 1980, 1974, 1955];
 //just testing transfer of elements or array from one to another
 var empty = []
-var i = -1;
-while (i<testArray.length-1){
-	i++;
+var i = 0;
+while (i<testArray.length){
 	empty[i] = testArray [i];
+	i++;	
 	console.log(empty);
 }
 
 //Using 2016 as the year, transfer ages to array age
-var i = -1;
+var i = 0;
 var age = []
-while (i<empty.length -1){
-	i++;
+while (i<empty.length){
 	age[i] = 2016 - empty[i];
+	i++;	
 	console.log(age);
 }
 
 //loop through age array, and see if their age is less than 18
-var i = -1;
-while(i<age.length-1){
+var i = 0;
+while(i<age.length){
 	i++;
 	if (age[i]<18){
 		console.log(age[i] + ' is under 18');
@@ -32,11 +32,11 @@ while(i<age.length-1){
 }
 //recreate using a function, true for above 18, false for below 18
 function printFullAge(agesList) {
-	var i = -1;
+	var i = 0;
 	var age = [];
-while (i<agesList.length -1){
-	i++;
+while (i<agesList.length){
 	age[i] = 2016 - agesList[i];
+	i++;
 	if(age[i]<18){
 		agesList[i] = false;
 	}else{
