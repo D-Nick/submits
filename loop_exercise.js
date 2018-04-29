@@ -22,12 +22,12 @@ while (i<empty.length){
 //loop through age array, and see if their age is less than 18
 var i = 0;
 while(i<age.length){
-	i++;
 	if (age[i]<18){
 		console.log(age[i] + ' is under 18');
 	}else{
 		console.log(age[i] + ' is above 18');
 	}
+	i++;
 	
 }
 //recreate using a function, true for above 18, false for below 18
